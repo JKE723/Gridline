@@ -121,3 +121,55 @@ h1, h2 {
 @keyframes fadeImage {
     to { opacity: 1; }
 }
+/* PRODUCT PAGE LAYOUT */
+.product-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #073053;
+}
+
+.product-details p {
+    margin: 6px 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: #073053;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .product-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
